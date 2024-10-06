@@ -216,27 +216,8 @@ footer {
     background-color: #000;
     color: #aaa;
     text-align: center;
-    padding: 20px 0;
-}
+    padding: 20px;
 
-.social-media {
-    margin-top: 20px;
-}
-
-.social-media a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.social-media img {
-    width: 24px;
-    height: 24px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.social-media img:hover {
-    filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
