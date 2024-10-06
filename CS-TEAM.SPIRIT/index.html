@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Spirit CS — Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Фан-сайт киберспортивной команды Team Spirit">
+    <meta name="keywords" content="Team Spirit, киберспорт, Dota 2, CS:GO, фан-сайт">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoico.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            background-position: center; 
+            background-image: url('images/wallpaper.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            margin: 0;
+            font-family: 'Jost', sans-serif; 
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border: 3px solid white;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .gallery-grid img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Логотип Team Spirit" class="logo">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="players.html">Игроки</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>Что такое Team Spirit в общем?</h2>
+                <p>Team Spirit - международная киберспортивная организация, созданная в 2015 году. Основной офис команды базируется в столице Сербии, г. Белград.
+
+                   <p> На сегодняшний день мы представлены в таких дисциплинах, как CS2 (chopper, magixx, sh1ro, zont1x, donk), Dota 2 (Yatoro雨, Larl, Collapse, Mira, Miposhka), Hearthstone (SilverName), PUBG Mobile (KITSUNE, EFFECT, KNOWME и NAOMI), MLBB (Kid Bomba, Marl, Sunset Lover, HIKO, SAWO). Также частью Team Spirit Family являются стримеры Wycc220, SCL`KOMA, Illidan, Weronest и Yama_Darma. </p>
+                    
+                    Цель - стабильно выступать на высоком уровне в каждой из дисциплин и конкурировать с лучшими киберспортивными клубами мира. Мы хотим внести позитивный вклад в комьюнити с помощью интересного контента, purpose-инициатив и коллабораций.
+                    
+                    Последние достижения: победители The International 10, чемпионы PGL Arlington Major 2022, чемпионы DPC EEU: Regional Finals Dota 2, победители Riyadh Masters 2023 и DreamLeague Season 21. Чемпионы The International 12, чемпионы IEM Katowice 2024 по CS2, 3-4 место PGL Antwerp Major 2022 по CS:GO, 9-12 IEM Cologne 2022, топ-6 в рейтинге HLTV (май 2022), чемпионы Dunav Party LAN и BB Dacha Dubai в CS2, топ-4 на Hearthstone World Championship 2020.</p>
+            </div>
+        </section>
+
+       
+        <section id="news">
+            <div class="container">
+                <h2>Последние новости</h2>
+                <div class="news-grid">
+                    <article class="news-item">
+                        <img src="images/news1.jpeg" alt="Новость 1">
+                        <h3>zont1x: «У нас есть ментальные модели, которые несовместимы с победителями чемпионатов»</h3>
+                        <p> Мирослав указал на проблемы, связанные с «ментальными моделями» Spirit</p>
+                        <a href="news.html" class="read-more">Читать далее</a>
+                    </article>
+                    <article class="news-item">
+                        <img src="images/news2.avif" alt="Новость 2">
+                        <h3>G2 обыгрывают Spirit со счетом 3:0 и выходят в полуфинал осеннего финала</h3>
+                        <p>m0NESY был неудержим на Mirage, показав рейтинг 1,72, импакт 2,13 и KPR 1,07</p>
+                        <a href="news.html" class="read-more">Читать далее</a>
+                    </article>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Галерея</h2>
+                <div class="gallery-grid">
+                    <img src="images/gallery1.avif" alt="Фото 1" class="gallery-image">
+                    <img src="images/gallery2.avif" alt="Фото 2" class="gallery-image">
+                    <img src="images/gallery3.avif" alt="Фото 3" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="upcoming-matches">
+            <div class="container">
+                <h2>Ближайшие матчи</h2>
+                <h3>Предстоящий матч Perfect World Shanghai Major 2024.
+                    Дата матча неизвестна.
+                </h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Сайт был создан исключительно для индивидуального проекта.</p>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+        var closeBtn = document.getElementsByClassName("close")[0];
+        var galleryImages = document.querySelectorAll(".gallery-image");
+
+        galleryImages.forEach(function(image) {
+            image.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+        modal.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
